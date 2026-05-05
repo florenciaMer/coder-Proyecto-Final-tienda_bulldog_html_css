@@ -1,0 +1,108 @@
+<!-- 
+Navbar
+Logo izquierda
+Menú: Inicio | Tienda | Contacto
+Ícono carrito 🛒
+Hero (portada)
+Imagen grande
+
+Texto corto:
+
+“Nueva colección 2026”
+
+Botón: Comprar ahora
+Productos destacados
+3 o 4 cards (imagen + nombre + precio + botón)
+Banner simple
+“Envíos gratis en Argentina 🇦🇷”
+Footer
+Redes + contacto -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Proyecto final</title>
+</head>
+<body>
+<div class="container">
+<header class="header"> 
+  <div class="logo"><img src="./img/logo.svg" alt="logo" width="80px"></div>
+  <h1>Todo para tu mascota</h1>
+  <div class="iconoCarrito">
+        <img src="./img/carrito.svg" alt="carrito de compras" width="50px">
+    </div>
+</header>
+  <nav class="nav">
+    
+    <div class="menu">
+         <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+    
+  </nav>
+  <main class="main">
+    <h2>Productos para Bulldogs</h2>
+    
+    <div class="portada">
+        <img src="./img/portada.jpg" alt="Imagen principal" srcset="./img/portada.jpg 1x, ./img/portada3800.jpg 2x" width="950px" class="img_portada">
+    </div>
+    <div class="novedades">
+        <p>Novedades 2026</p>
+        <button>Ver más</button>
+    </div>
+    
+    <section class="productos-destacados">
+        <div><h2>Productos destacados</h2></div>
+        <div class="destacados">
+            <div class="card">
+                <p class="card__title">Alimento para mascotas Linea Ultima</p>
+                <img src="./img/alimento_ultima.jpg" alt="imagen a la venta">
+                <p>$25000</p>
+                <button class="card__button">Comprar</button>
+            </div>
+            <div class="card">
+                <p class="card__title">Capita para perros</p>
+                <img src="./img/capita.jpg" alt="imagen a la venta">
+                <p>$12000</p>
+                <button class="card__button">Comprar</button>
+            </div>
+            <div class="card">
+                <p class="card__title">Alimento para mascotas Linea Dog chow</p>
+                <img src="./img/dog_chow.jpg" alt="imagen a la venta">
+                <p>$13000</p>
+                <button class="card__button">Comprar</button>
+            </div>
+            <div class="card">
+                <p class="card__title">Juguete pez</p>
+                <img src="./img/pecesito_juguete.jpg" alt="imagen a la venta">
+                <p>$28000</p>
+                <button class="card__button">Comprar</button>
+            </div>
+        </div>
+    </section>
+    <section class="banner">
+        <img src="./img/banner.svg" alt="imagen del banner de la pagina">
+    </section>
+  </main>
+  <footer class="footer">
+    <ul class="redes">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Tienda</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </footer>
+</div>
+</body>
+</html>

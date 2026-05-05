@@ -1,0 +1,15 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    
+    <!-- Manija -->
+    <path d="M8 12h6l6 28h26l6-20H18"></path>
+    
+    <!-- Base -->
+    <line x1="22" y1="40" x2="50" y2="40"></line>
+
+    <!-- Ruedas -->
+    <circle cx="24" cy="48" r="4" fill="#111"></circle>
+    <circle cx="46" cy="48" r="4" fill="#111"></circle>
+
+  </g>
+</svg>
