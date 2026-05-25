@@ -1,0 +1,303 @@
+// automatico 
+// sass --watch scss/style.scss css/style.css    
+
+$grisClaro: #f8f9fa;
+$grisNav: #e9ecef;
+$footer: #181818;
+$rojoClaro: #f65959;
+
+@mixin flex-center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin a_configuration{
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+
+    gap: 10px;
+
+    width: 100%;
+
+    padding: 10px;
+    margin: auto;
+    header .iconoCarrito{
+        display: flex;
+        justify-content: end;
+    }
+    header h1{
+        text-align: center;
+    }
+}
+.logo img{
+    width: 100px;
+}
+.nav{
+
+    .menu{
+        margin: auto;
+        ul{
+            display:flex;
+            flex-direction: column;
+        }
+        li{
+            list-style: none;
+            background-color: black;
+            margin: 2px;
+            padding: 3px;
+
+            &:hover{
+                background-color: $grisNav;
+
+                a{
+                    color: black;
+                }
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+    }
+}
+/* *************** Main ****************/
+h2{
+    text-align: center;
+}
+.img_portada{
+     width: 100%;
+    height: auto;
+    display: block;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+
+    transition: 0.5s;
+    perspective: 800px;
+
+    &:hover{
+        transform:
+            translate(50px, 20px)
+            rotate(45deg)
+            scale(1.1, 2)
+            skew(20deg, 10deg);
+    }
+}
+
+.escena{
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    margin: 5px
+}
+
+.tarjeta{
+    width: 260px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+
+    border-radius: 15px;
+
+    transform-style: preserve-3d;
+    transition: transform .3s ease;
+
+    h2{
+        transform: translateZ(40px);
+    }
+
+    p{
+        text-align: center;
+        transform: translateZ(25px);
+    }
+
+    .tarjetabutton{
+        transform: translateZ(50px);
+    }
+
+    &:hover{
+        transform: rotateX(15deg) rotateY(15deg);
+    }
+}
+
+
+.cara{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    backface-visibility: hidden;
+
+    transform-style: preserve-3d;
+
+    img{
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+        display: block;
+    }
+}
+
+.frente{
+    transform: rotateY(0deg);
+}
+
+.atras{
+    transform: rotateY(180deg);
+}
+/* ********** productos destacados ********** */
+.boton_destacado{
+    background-color: $grisClaro;
+}
+
+.destacados{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+}
+.productos-destacados{
+    background-color: $grisClaro;
+    padding: 5px;
+
+    @include flex-center-column;
+
+    h2{
+        padding: 25px;
+    }
+    .card .card-body .card-title{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    a{
+        display:block;
+    }
+    .card{
+        margin:35px;
+        width: 100%;
+        max-width: 18rem;
+}
+    .precio{
+        background: $rojoClaro;
+        display: inline-block;
+        width: 90px;
+        height: 38px;
+        text-align: center;
+        margin-left: 226px;
+        transform: rotate(45deg);
+        margin-top: 5px;
+        font-size: 1.5rem;
+    }
+}
+footer{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: $footer;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer ul a{
+    @include a_configuration;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+}
+
+@media (min-width: 768px){
+    .grid-productos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+        .destacados{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+
+}
+
+@media (min-width: 1024px) {
+
+    .contenedor{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .grid-productos{
+        grid-template-columns: repeat(4, 1fr);
+    }
+        .destacados{
+        grid-template-columns: repeat(4, 1fr);
+    }
+   
+    .nav .menu ul{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .logo img{
+        width: 200px;
+}
+    .footer ul{
+        display: flex;
+       
+    }
+    li{
+         margin: 12px;
+    }
+
+}
