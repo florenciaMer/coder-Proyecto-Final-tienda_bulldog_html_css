@@ -25,18 +25,28 @@ body {
 }
 .contenedor header h1 {
   text-align: center;
+  width: 100%;
+  background-color: antiquewhite;
+  transform: perspective(50px) rotateX(10deg);
+  padding: 10px;
+  border-radius: 5%;
 }
 
 .logo img {
   width: 100px;
 }
 
+/* nav */
+.nav {
+  background-color: #181818;
+}
 .nav .menu {
   margin: auto;
 }
 .nav .menu ul {
   display: flex;
   flex-direction: column;
+  margin: 1.5%;
 }
 .nav .menu li {
   list-style: none;
@@ -54,6 +64,10 @@ body {
   text-decoration: none;
   color: white;
   transition: 0.3s;
+  white-space: nowrap;
+}
+.nav .menu .activo {
+  background-color: #67718a;
 }
 
 /* *************** Main ****************/
@@ -168,20 +182,65 @@ h2 {
   display: block;
 }
 .productos-destacados .card {
-  margin: 35px;
   width: 100%;
   max-width: 18rem;
+  margin: 0;
+  position: relative;
 }
 .productos-destacados .precio {
+  position: absolute;
+  top: 5px;
+  right: -5px;
+  margin: 0;
   background: #f65959;
   display: inline-block;
   width: 90px;
   height: 38px;
   text-align: center;
-  margin-left: 226px;
   transform: rotate(45deg);
-  margin-top: 5px;
   font-size: 1.5rem;
+  animation-name: precio_animation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.productos-destacados .precio_oferta {
+  background-color: #ffff00;
+  animation: latido 1s infinite;
+}
+@keyframes latido {
+  0% {
+    transform: rotate(15deg) scale(1);
+  }
+  25% {
+    transform: rotate(15deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(15deg) scale(1.25);
+  }
+  75% {
+    transform: rotate(15deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(15deg) scale(1);
+  }
+}
+@keyframes precio_animation {
+  0% {
+    transform: rotate(25deg);
+  }
+  25% {
+    transform: rotate(35deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  75% {
+    transform: rotate(35deg);
+  }
+  100% {
+    transform: rotate(25deg);
+  }
 }
 
 footer {
@@ -200,27 +259,75 @@ footer {
 .footer ul {
   list-style: none;
 }
-
-.footer ul a {
+.footer ul li a {
   text-decoration: none;
   transition: 0.3s;
   color: white;
 }
+.footer ul li a:hover {
+  color: #7b84d6;
+  transition: 0.3s;
+}
 
 footer p {
   text-align: center;
-  color: white;
+  color: rgb(119, 115, 115);
   margin: 10px 0;
 }
 
+.activo {
+  background-color: #67718a;
+}
+
+/* adultos */
+.img_animada {
+  width: 80px;
+  position: absolute;
+  left: 60%;
+  animation-name: img_animada_animation;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* formulario*/
+.txt_span {
+  color: rgb(167, 77, 77);
+}
+
 @media (min-width: 768px) {
-  .grid-productos {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .destacados {
     grid-template-columns: repeat(2, 1fr);
   }
+  .img_animada {
+    left: 70%;
+  }
+  .span_form {
+    top: 770px;
+  }
 }
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.whatsapp img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s;
+}
+
+.whatsapp img:hover {
+  transform: scale(1.1);
+}
+
 @media (min-width: 1024px) {
   .contenedor {
     max-width: 1200px;
@@ -244,6 +351,46 @@ footer p {
   }
   li {
     margin: 12px;
+  }
+  .img_animada {
+    left: 80%;
+  }
+  .menu {
+    margin: auto;
+  }
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+  }
+  .menu ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+  }
+}
+@keyframes img_animada_animation {
+  /* DERECHA */
+  0% {
+    transform: translate(0px, 0px);
+  }
+  /* ABAJO */
+  25% {
+    transform: translate(80px, 0px);
+  }
+  /* IZQUIERDA */
+  50% {
+    transform: translate(80px, 120px);
+  }
+  /* ARRIBA */
+  75% {
+    transform: translate(0px, 120px);
+  }
+  /* VUELVE AL INICIO */
+  100% {
+    transform: translate(0px, 0px);
   }
 }
 

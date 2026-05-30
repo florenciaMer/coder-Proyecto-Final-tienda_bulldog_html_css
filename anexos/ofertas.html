@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Proyecto final - Ofertas</title>
+</head>
+<body>
+<div class="contenedor">
+<header class="header row"> 
+  <div class="logo"><img src="../img/logo.svg" alt="logo" ></div>
+  <h1>Ofertas Destacadas</h1>
+  <div class="iconoCarrito">
+        <img src="../img/carrito.svg" alt="carrito de compras" width="50px">
+    </div>
+</header>
+  <nav class="nav">
+    
+    <div class="menu">
+         <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./tienda.html">Tienda</a></li>
+            <li class="activo"><a href="#">Ofertas</a></li>
+            <li><a href="./acerca_nosotros.html">Acerca de Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+    
+  </nav>
+  <main class="main">
+    <h2 class="m-5">Productos en promoción</h2>
+ <div class="accordion mb-4" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Importante
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>En esta sección encontrarás las promociones del día   </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Leer mas
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Hoy oferta en alimento para mascotas.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        La promo del dia
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Alimento balanceado para perros cachorros y/o adultos.
+      </div>
+    </div>
+  </div>
+</div>
+<section class="productos-destacados">
+     <div class="destacados">
+        <div class="card" style="width: 15rem;">
+            <div class="precio precio_oferta">$45000</div>
+            <img src="../img/alimento_ultima.jpg" class="card-img-top" alt="imagen de venta producto">
+            <div class="card-body">
+                <h5 class="card-title">Alimento para Perros Adultos</h5>
+                <p class="card-text">Diseñado para la nutrición completa de tu mascota</p>
+                <button type="button" class="btn btn-secondary " data-bs-toggle="modal" data-bs-target="#modal1">
+                Ver mas
+              </button>
+            </div>
+        </div>
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Atención</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Producto Destacado a la venta
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="card text-center" style="width: 15rem;">
+            <div class="precio precio_oferta">$52000</div>
+            <img src="../img/prod01-adultos.jfif" class="card-img-top" alt="imagen de venta producto">
+            <div class="card-body">
+                <h5 class="card-title">Alimento balanceado para perros</h5>
+                <p class="card-text">La mejor nutricion para tu mascota</p>
+                <button type="button" class="btn btn-secondary " data-bs-toggle="modal" data-bs-target="#modal1">
+                Ver mas
+              </button>
+            </div>
+        </div>
+        <div class="card text-center" style="width: 15rem;">
+            <div class="precio precio_oferta">$51000</div>
+            <img src="../img/prod02-adultos.jfif" class="card-img-top" alt="imagen de venta producto">
+            <div class="card-body">
+                <h5 class="card-title">Alimento Balanceado</h5>
+                <p class="card-text">Todos los nutrientes en un solo producto</p>
+                <button type="button" class="btn btn-secondary " data-bs-toggle="modal" data-bs-target="#modal1">
+                Ver mas
+              </button>
+            </div>
+        </div>
+        <div class="card text-center" style="width: 15rem;">
+            <div class="precio precio_oferta">$48000</div>
+            <img src="../img/prod03-adultos.jfif" class="card-img-top" alt="imagen de venta producto">
+            <div class="card-body">
+                <h5 class="card-title">Pedigree</h5>
+                <p class="card-text">Toda la nutricion en un alimento completo</p>
+                <button type="button" class="btn btn-secondary " data-bs-toggle="modal" data-bs-target="#modal1">
+                Ver mas
+              </button>
+            </div>
+        </div>
+         <div class="card text-center" style="width: 15rem;">
+            <div class="precio precio_oferta">$39000</div>
+            <img src="../img/prod01-cachorros.jpeg" class="card-img-top" alt="imagen de venta producto">
+            <div class="card-body">
+                <h5 class="card-title">Alimento balanceado</h5>
+                <p class="card-text">Diseñado para la nutrición completa de tu mascota</p>
+                 <button type="button" class="btn btn-secondary " data-bs-toggle="modal" data-bs-target="#modal1">
+                Ver mas
+              </button>
+            </div>
+        </div>
+        <div class="card text-center" style="width: 15rem;">
+            <div class="precio precio_oferta">$42000</div>
+            <img src="../img/prod02-cachorro.webp" class="card-img-top" alt="imagen de venta producto">
+            <div class="card-body">
+                <h5 class="card-title">Alimento balanceado</h5>
+                <p class="card-text">La mejor nutricion para tu mascota</p>
+                <button type="button" class="btn btn-secondary " data-bs-toggle="modal" data-bs-target="#modal1">
+                Ver mas
+              </button>
+            </div>
+        </div>
+        <div class="card text-center" style="width: 15rem;">
+            <div class="precio precio_oferta">$41000</div>
+            <img src="../img/prod03-cachorro.jpg" class="card-img-top" alt="imagen de venta producto">
+            <div class="card-body">
+                <h5 class="card-title">Alimento Balanceado</h5>
+                <p class="card-text">Todos los nutrientes en un solo producto</p>
+                <button type="button" class="btn btn-secondary " data-bs-toggle="modal" data-bs-target="#modal1">
+                Ver mas
+              </button>
+            </div>
+        </div>
+        <div class="card text-center" style="width: 15rem;">
+            <div class="precio precio_oferta">$47000</div>
+            <img src="../img/prod04-cachorro.png" class="card-img-top" alt="imagen de venta producto">
+            <div class="card-body">
+                <h5 class="card-title">Vitaminas para perros</h5>
+                <p class="card-text">Toda la nutricion en un alimento completo</p>
+                <button type="button" class="btn btn-secondary " data-bs-toggle="modal" data-bs-target="#modal1">
+                Ver mas
+              </button>
+            </div>
+        </div>
+     </div>
+</section>
+    <section class="banner">
+        <img src="../img/banner.svg" alt="imagen del banner de la pagina">
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+    <!-- redes sociales -->
+    <ul class="redes">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+    </ul>
+    <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./tienda.html">Tienda</a></li>
+          <li class="activo"><a href="#">Ofertas</a></li>
+          <li><a href="./acerca_nosotros.html">Acerca de Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+    </ul>
+</div>
+    <p>@Florencia_merzario 2026</p>
+    <a href="https://wa.me/5491131074323?text=Hola,%20quiero%20más%20información%20sobre%20sus%20productos"
+     class="whatsapp" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+  </footer>
+</div>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

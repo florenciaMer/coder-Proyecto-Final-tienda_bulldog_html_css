@@ -1,23 +1,3 @@
-<!-- 
-Navbar
-Logo izquierda
-Menú: Inicio | Tienda | Contacto
-Ícono carrito 🛒
-Hero (portada)
-Imagen grande
-
-Texto corto:
-
-“Nueva colección 2026”
-
-Botón: Comprar ahora
-Productos destacados
-3 o 4 cards (imagen + nombre + precio + botón)
-Banner simple
-“Envíos gratis en Argentina 🇦🇷”
-Footer
-Redes + contacto -->
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -42,11 +22,11 @@ Redes + contacto -->
     
     <div class="menu">
          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Cachorros</a></li>
-            <li><a href="#">Adultos</a></li>
-            <li><a href="#">Ofertas</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li class="activo"><a href="index.html">Inicio</a></li>
+            <li><a href="./anexos/tienda.html">Tienda</a></li>
+            <li><a href="./anexos/ofertas.html">Ofertas</a></li>
+            <li><a href="./anexos/acerca_nosotros.html">Acerca de Nosotros</a></li>
+            <li><a href="./anexos/contacto.html">Contacto</a></li>
         </ul>
     </div>
     
@@ -81,47 +61,73 @@ Redes + contacto -->
     <div class="escena">
         <div class="tarjeta">
             <h2>Atención</h2>
-            <p>Ir a ver las ofertas</p>
-            <button>Ver</button>
+            <p>Ofertas destacadas</p>
+            <a href="./anexos/ofertas.html" class="btn btn-secondary">Ver</a>
         </div>
     </div>
-    
+ 
 <section class="productos-destacados">
      <div class="destacados">
-        <div class="card" style="width: 18rem;">
+        <div class="card text-center" style="width: 15rem;">
             <div class="precio">$45000</div>
-            <img src="./img/alimento_ultima.jpg" class="card-img-top" alt="imagen de venta producto">
+            <img src="./img/alimento_ultima.jpg"
+             class="card-img-top" alt="imagen de venta producto">
             <div class="card-body">
-                <h5 class="card-title">Alimento para Perros Adultos</h5>
+                <h5 class="card-title">Alimento para Perros</h5>
                 <p class="card-text">Diseñado para la nutrición completa de tu mascota</p>
-                <a href="#" class="btn boton_destacado">Ver más</a>
+                <button type="button" class="btn btn-secondary " data-bs-toggle="modal" data-bs-target="#modal1">
+                Ver mas
+              </button>
             </div>
+            <!-- Modal -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Atencion</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Producto Destacado a la venta
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card text-center" style="width: 15rem;">
             <div class="precio">$50000</div>
             <img src="./img/capita.jpg" class="card-img-top" alt="imagen de venta producto">
             <div class="card-body">
                 <h5 class="card-title">Capita para Perros</h5>
                 <p class="card-text">Ropa de diseño para mascotas con abrigo </p>
-                <a href="#" class="btn boton_destacado">Ver más</a>
+                <button type="button" class="btn btn-secondary " data-bs-toggle="modal" data-bs-target="#modal1">
+                Ver mas
+              </button>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card text-center" style="width: 15rem;">
             <div class="precio">$60000</div>
             <img src="./img/dog_chow.jpg" class="card-img-top" alt="imagen de venta producto">
             <div class="card-body">
                 <h5 class="card-title">Alimento Balanceado</h5>
                 <p class="card-text">Dog Chow para cachorros</p>
-                <a href="#" class="btn boton_destacado">Ver más</a>
+                 <button type="button" class="btn btn-secondary " data-bs-toggle="modal" data-bs-target="#modal1">
+                Ver mas
+              </button>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card text-center" style="width: 15rem;">
             <div class="precio">$15000</div>
             <img src="./img/pecesito_juguete.jpg" class="card-img-top" alt="imagen de venta producto">
             <div class="card-body">
                 <h5 class="card-title">Juguetes magicos</h5>
                 <p class="card-text">Un divertido juguete para tu mascota</p>
-                <a href="#" class="btn boton_destacado">Ver más</a>
+                 <button type="button" class="btn btn-secondary " data-bs-toggle="modal" data-bs-target="#modal1">
+                Ver mas
+              </button>
             </div>
         </div>
 
@@ -140,15 +146,22 @@ Redes + contacto -->
         <li><a href="#">Twitter</a></li>
     </ul>
     <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Tienda</a></li>
-      <li><a href="#">Contacto</a></li>
+        <li class="activo"><a href="index.html">Inicio</a></li>
+        <li><a href="./anexos/tienda.html">Tienda</a></li>
+        <li><a href="./anexos/ofertas.html">Ofertas</a></li>
+        <li><a href="./anexos/acerca_nosotros.html">Acerca de Nosotros</a></li>
+        <li><a href="./anexos/contacto.html">Contacto</a></li>
     </ul>
 </div>
+
     <p>@Florencia_merzario 2026</p>
   </footer>
 </div>
-
+<a href="https://wa.me/5491131074323?text=Hola,%20quiero%20más%20información%20sobre%20sus%20productos" 
+class="whatsapp" 
+target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
