@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Proyecto final - Acerca de nosotros</title>
 </head>
@@ -18,21 +19,30 @@
     </div>
 </header>
   <nav class="nav">
-    
+       <div class="burguer">
+        <i class="bi bi-justify"></i>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./tienda.html">Tienda</a></li>
+            <li><a href="./ofertas.html">Ofertas</a></li>
+            <li class="activo"><a href="#">Acerca de Nosotros</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </div>
     <div class="menu">
          <ul>
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="./tienda.html">Tienda</a></li>
-            <li><a href="./anexos/ofertas.html">Ofertas</a></li>
+            <li><a href="./ofertas.html">Ofertas</a></li>
             <li class="activo"><a href="#">Acerca de Nosotros</a></li>
-            <li><a href="./anexos/contacto.html">Contacto</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
         </ul>
     </div>
     
   </nav>
-    <h1>Acerca de nosotros</h1>
+    <h1 class="text-center">Acerca de nosotros</h1>
     <main>
-        <section class="mb-4">
+        <section class="mb-4 text-center">
             <p>Somos una empresa que se encuentra vendiendo nuestros productos desde hace mas
             de 10 años, brindando servicio y calidad en todo lo que ofrecemos.</p>
             <p>Nos especializamos en perros de la raza Bulldog</p>
@@ -40,7 +50,7 @@
             <img src="../img/carrousel_2.jpg" alt="imagen de perro cachorro">
             <img src="../img/carrousel_3.jpg" alt="imagen de perro cachorro">
         </section>
-        <section class="d-md-flex justify-content-md-center flex-md-column text-md-center">
+        <section class="d-md-flex justify-content-md-center flex-md-column text-center">
             <p>Ofrecemos toda clase de productos</p>
             <ul class="acerca_ul">
                 <li class="list-unstyled">Alimento balanceado</li>
@@ -48,21 +58,21 @@
                 <li class="list-unstyled">Juguetes</li>
                 <li class="list-unstyled">Vitaminas</li>
             </ul>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-3">
+            <div class="row text-center">
+                <div class="col-12 col-md-6 col-lg-3 escalar">
                     <img src="../img/dog_chow.jpg" class="img-fluid" alt="Dog Chow">
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3 escalar">
                     <img src="../img/pecesito_juguete.jpg" class="img-fluid" alt="Juguete">
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3 escalar">
                     <img src="../img/capita.jpg" class="img-fluid" alt="Capita">
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3">
-                    <img src="../img/prod01-cachorros.jpeg" class="img-fluid" alt="Producto">
+                <div class="col-12 col-md-6 col-lg-3 escalar">
+                    <img src="../img/alimento_ultima.jpg" class="img-fluid" alt="Producto">
                 </div>
             </div>
         </section>

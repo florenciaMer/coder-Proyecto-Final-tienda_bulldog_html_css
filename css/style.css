@@ -32,13 +32,51 @@ body {
   border-radius: 5%;
 }
 
+.iconoCarrito {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+.iconoCarrito img {
+  width: 50px;
+  transition: transform 0.3s;
+}
+.iconoCarrito:hover img {
+  transform: scale(1.3);
+}
+
 .logo img {
   width: 100px;
 }
 
 /* nav */
-.nav {
-  background-color: #181818;
+.nav .bi-justify {
+  font-size: 3rem;
+}
+.nav .burguer {
+  position: relative;
+}
+.nav .burguer ul {
+  display: none;
+}
+.nav .burguer:hover {
+  background: black;
+  height: 250px;
+  width: 300px;
+  color: white;
+}
+.nav .burguer:hover ul {
+  display: block;
+}
+.nav .burguer:hover ul li {
+  list-style: none;
+  margin: 5px;
+}
+.nav .burguer:hover ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
 }
 .nav .menu {
   margin: auto;
@@ -52,7 +90,7 @@ body {
   list-style: none;
   background-color: black;
   margin: 2px;
-  padding: 3px;
+  padding: 7px;
 }
 .nav .menu li:hover {
   background-color: #e9ecef;
@@ -68,6 +106,9 @@ body {
 }
 .nav .menu .activo {
   background-color: #67718a;
+}
+.nav .menu {
+  display: none;
 }
 
 /* *************** Main ****************/
@@ -243,6 +284,17 @@ h2 {
   }
 }
 
+/* Acerca de nosotors*/
+.escalar img {
+  width: 180px;
+  margin: 5px;
+  transition: transform 0.3s;
+}
+.escalar:hover img {
+  transform: scale(1.3);
+}
+
+/* Fin acerca de nosotros */
 footer {
   padding: 10px;
   width: 100%;
@@ -263,6 +315,7 @@ footer {
   text-decoration: none;
   transition: 0.3s;
   color: white;
+  padding: 7px;
 }
 .footer ul li a:hover {
   color: #7b84d6;
@@ -273,6 +326,7 @@ footer p {
   text-align: center;
   color: rgb(119, 115, 115);
   margin: 10px 0;
+  padding: 5px;
 }
 
 .activo {
@@ -310,6 +364,12 @@ img {
   .span_form {
     top: 770px;
   }
+  .nav .menu {
+    display: block;
+  }
+  .nav .burguer {
+    display: none;
+  }
 }
 .whatsapp {
   position: fixed;
@@ -339,6 +399,12 @@ img {
   .destacados {
     grid-template-columns: repeat(4, 1fr);
   }
+  .nav .menu {
+    display: block;
+  }
+  .nav .burguer {
+    display: none;
+  }
   .nav .menu ul {
     flex-direction: row;
     justify-content: center;
@@ -357,6 +423,7 @@ img {
   }
   .menu {
     margin: auto;
+    display: block;
   }
   .menu ul {
     display: flex;
