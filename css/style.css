@@ -19,10 +19,14 @@ body {
   padding: 10px;
   margin: auto;
 }
+.contenedor header {
+  position: relative;
+  min-height: 120px;
+}
 .contenedor header .iconoCarrito {
   display: flex;
   justify-content: end;
-  margin-top: 150px;
+  top: 150px;
 }
 .contenedor header h1 {
   text-align: center;
@@ -35,16 +39,16 @@ body {
 
 .iconoCarrito {
   position: absolute;
-  margin-top: 7%;
+  top: 130px;
   right: 20px;
-  z-index: 9999;
+  pointer-events: none;
 }
 .iconoCarrito img {
   width: 50px;
   transition: transform 0.3s;
 }
 .iconoCarrito:hover img {
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 .logo img {
@@ -357,7 +361,7 @@ img {
 
 @media (min-width: 768px) {
   .iconoCarrito {
-    margin-top: 20%;
+    top: 160px;
   }
   .destacados {
     grid-template-columns: repeat(2, 1fr);
@@ -375,26 +379,9 @@ img {
     display: none;
   }
 }
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
-}
-
-.whatsapp img {
-  width: 60px;
-  height: 60px;
-  transition: transform 0.3s;
-}
-
-.whatsapp img:hover {
-  transform: scale(1.1);
-}
-
 @media (min-width: 1024px) {
   .iconoCarrito {
-    top: 100px;
+    margin-top: 80px;
   }
   .contenedor {
     max-width: 1200px;
