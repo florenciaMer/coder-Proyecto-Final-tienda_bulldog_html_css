@@ -54,6 +54,7 @@ body {
     header .iconoCarrito{
         display: flex;
         justify-content: end;
+        margin-top: 150px;
     }
     header h1{
         text-align: center;
@@ -65,8 +66,8 @@ body {
     }
 }
 .iconoCarrito{
-    position: fixed;
-    top: 20px;
+    position: absolute;
+    margin-top: 7%;
     right: 20px;
     z-index: 9999;
 
@@ -282,10 +283,10 @@ h2{
         display:block;
     }
     .card{
-    width: 100%;
-    max-width: 18rem;
-    margin: 0;
-    position: relative;
+        width: 100%;
+        max-width: 18rem;
+        margin: 0;
+        position: relative;
 }
 
 .precio{
@@ -430,6 +431,10 @@ img{
 }
 @media (min-width: 768px){
     
+        .iconoCarrito{
+            margin-top: 20%;
+        }
+
         .destacados{
         grid-template-columns: repeat(2, 1fr);
         }
@@ -469,6 +474,9 @@ img{
 
 @media (min-width: 1024px) {
 
+    .iconoCarrito{
+            top: 100px;
+        }
     .contenedor{
         max-width: 1200px;
         margin: auto;
