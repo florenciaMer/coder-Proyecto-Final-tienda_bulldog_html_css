@@ -26,13 +26,12 @@ body {
 .contenedor header .iconoCarrito {
   display: flex;
   justify-content: end;
-  top: 150px;
+  top: 220px;
 }
 .contenedor header h1 {
   text-align: center;
   width: 100%;
-  background-color: antiquewhite;
-  transform: perspective(50px) rotateX(10deg);
+  background-color: rgb(225, 229, 209);
   padding: 10px;
   border-radius: 5%;
 }
@@ -361,7 +360,7 @@ img {
 
 @media (min-width: 768px) {
   .iconoCarrito {
-    top: 160px;
+    top: 180px;
   }
   .destacados {
     grid-template-columns: repeat(2, 1fr);
@@ -381,7 +380,8 @@ img {
 }
 @media (min-width: 1024px) {
   .iconoCarrito {
-    margin-top: 80px;
+    position: absolute;
+    top: 290px !important;
   }
   .contenedor {
     max-width: 1200px;
